@@ -1,5 +1,5 @@
 {% set name = "multidimio" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
-  sha256: 3c70a665ad37f116bf0467d8419c57e7bdcc5e94945c8f255c955dd53da981d4
+  sha256: 687a914240030747a811d1b09a3c2950931799cb50359f2a38dc6bece4dc03f2
 
 build:
   entry_points:
@@ -33,8 +33,9 @@ requirements:
     - segyio >=1.9.3,<2.0.0
     - zarr >=2.16.1,<3.0.0
     - fsspec >=2023.9.1
+    - rich >=13.7.1
     - urllib3 >=1.26.18,<2.0.0  # Remove with https://github.com/TGSAI/mdio-python/blob/ec0b3cdd7a33450ad42b57077dd712200b85c159/pyproject.toml#L36
-    
+
 test:
   imports:
     - mdio
