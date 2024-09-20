@@ -31,7 +31,7 @@ requirements:
     - tqdm >=4.66.4,<5.0.0
     - psutil >=6.0.0,<7.0.0
     - fsspec >=2024.6.0
-    - segy >=0.1.4,<1.0.0
+    - segy >=0.2.4,<0.3.0
     - rich >=13.7.1,<14.0.0
     - urllib3 >=1.26.18,<2.0.0  # Remove with https://github.com/TGSAI/mdio-python/blob/ec0b3cdd7a33450ad42b57077dd712200b85c159/pyproject.toml#L36
 
