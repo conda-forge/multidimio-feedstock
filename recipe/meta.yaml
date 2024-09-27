@@ -1,5 +1,5 @@
 {% set name = "multidimio" %}
-{% set version = "0.8.0.post1" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
-  sha256: 5e8a6ccb92e36fcf78907bed9f28c48f1c21172854611d83cbfb863de7b3b15e
+  sha256: 251bf8aea1d5cc1d212fc1eae2a6e67a10c6c73bb436765d2770e4be05e732a9
 
 build:
   entry_points:
@@ -30,17 +30,17 @@ requirements:
     - dask-core >=2024.6.1
     - tqdm >=4.66.4,<5.0.0
     - psutil >=6.0.0,<7.0.0
-    - fsspec >=2024.6.0
-    - segy >=0.2.0,<0.3.0
+    - fsspec >=2024.9.0
+    - segy >=0.2.2,<0.3.0
     - rich >=13.7.1,<14.0.0
     - urllib3 >=1.26.18,<2.0.0  # Remove with https://github.com/TGSAI/mdio-python/blob/ec0b3cdd7a33450ad42b57077dd712200b85c159/pyproject.toml#L36
 
   run_constrained:
     - distributed >=2024.6.1
     - bokeh >=3.4.1,<4.0.0
-    - s3fs >=2024.6.0
-    - gcsfs >=2024.6.0
-    - adlfs >=2024.4.1
+    - s3fs >=2024.9.0
+    - gcsfs >=2024.9.0
+    - adlfs >=2024.7.0
     - zfpy >=0.5.5,<2.0.0
 
 test:
