@@ -1,5 +1,5 @@
 {% set name = "multidimio" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
-  sha256: 251bf8aea1d5cc1d212fc1eae2a6e67a10c6c73bb436765d2770e4be05e732a9
+  sha256: 61fc24f787c2720eb59561bbf65f7b330eabc34f25989fb96a352a3c042b1857
 
 build:
   entry_points:
@@ -27,19 +27,19 @@ requirements:
     - click >=8.1.7,<9.0.0
     - click-params >=0.5.0,<0.6.0
     - zarr >=2.18.2,<3.0.0
-    - dask-core >=2024.6.1
-    - tqdm >=4.66.4,<5.0.0
-    - psutil >=6.0.0,<7.0.0
-    - fsspec >=2024.9.0
-    - segy >=0.2.2,<0.3.0
-    - rich >=13.7.1,<14.0.0
+    - dask-core >=2024.8.0
+    - tqdm >=4.67.0,<5.0.0
+    - psutil >=6.1.0,<7.0.0
+    - fsspec >=2024.10.0
+    - segy >=0.3.0,<0.4.0
+    - rich >=13.9.4,<14.0.0
     - urllib3 >=1.26.18,<2.0.0  # Remove with https://github.com/TGSAI/mdio-python/blob/ec0b3cdd7a33450ad42b57077dd712200b85c159/pyproject.toml#L36
 
   run_constrained:
-    - distributed >=2024.6.1
-    - bokeh >=3.4.1,<4.0.0
-    - s3fs >=2024.9.0
-    - gcsfs >=2024.9.0
+    - distributed >=2024.8.0
+    - bokeh >=3.4.3,<4.0.0
+    - s3fs >=2024.10.0
+    - gcsfs >=2024.10.0
     - adlfs >=2024.7.0
     - zfpy >=0.5.5,<2.0.0
 
