@@ -1,5 +1,5 @@
 {% set name = "multidimio" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.2.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
-  sha256: 61fc24f787c2720eb59561bbf65f7b330eabc34f25989fb96a352a3c042b1857
+  sha256: dced7de9f5c2ff886ec42c47a64efc1b687b73da8ce2fc0b84b4c48f681f8f40
 
 build:
   entry_points:
@@ -37,7 +37,7 @@ requirements:
 
   run_constrained:
     - distributed >=2024.8.0
-    - bokeh >=3.4.3,<4.0.0
+    - bokeh >=3.4.2,<4.0.0
     - s3fs >=2024.10.0
     - gcsfs >=2024.10.0
     - adlfs >=2024.7.0
