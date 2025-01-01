@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
   sha256: 4a876b218c0957a2c36e63aa79777b395ffe810d39f59c21015788c0e1dc7e56
 
 build:
@@ -14,16 +14,16 @@ build:
     - mdio = mdio.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9,<3.13
+    - python {{ python_min }}
     - pip
     - poetry-core
 
   run:
-    - python >=3.9,<3.13
+    - python >={{ python_min }},<3.13
     - click >=8.1.7,<9.0.0
     - click-params >=0.5.0,<0.6.0
     - zarr >=2.18.2,<3.0.0
@@ -51,6 +51,7 @@ test:
     - mdio --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://mdio.dev
