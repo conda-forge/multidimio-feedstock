@@ -14,7 +14,7 @@ build:
     - mdio = mdio.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
     - poetry-core
 
   run:
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }},<3.14
     - click >=8.1.7,<9.0.0
     - click-params >=0.5.0,<0.6.0
     - zarr >=3.0.6,<4.0.0
