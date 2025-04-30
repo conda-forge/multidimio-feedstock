@@ -1,5 +1,5 @@
 {% set name = "multidimio" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
-  sha256: 67d521e75c58d4da8765c14a6d878eb4dfe27ecfdf0b5d6e44a48a4e43e3d521
+  sha256: dcbaf6b5d2751605d5f7e9dfe87c4e9cf1492c7485c334f1d7d51b29becb52f7
 
 build:
   entry_points:
@@ -26,13 +26,13 @@ requirements:
     - python >={{ python_min }},<3.14
     - click >=8.1.7,<9.0.0
     - click-params >=0.5.0,<0.6.0
-    - zarr >=3.0.6,<4.0.0
     - dask-core >=2024.12.0
-    - tqdm >=4.67.0,<5.0.0
-    - psutil >=6.1.0,<7.0.0
     - fsspec >=2024.10.0
-    - segy >=0.4.0,<0.5.0
+    - psutil >=6.1.0,<7.0.0
     - rich >=13.9.4,<14.0.0
+    - segy >=0.4.0,<0.5.0
+    - tqdm >=4.67.0,<5.0.0
+    - zarr >=3.0.3,<3.0.7
 
   run_constrained:
     - distributed >=2024.12.0
