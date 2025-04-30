@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
-  sha256: dcbaf6b5d2751605d5f7e9dfe87c4e9cf1492c7485c334f1d7d51b29becb52f7
+  sha256: 070fdfa194be563a77a952be052c3345e66e9c052c788f3003d23b65110aa900
 
 build:
   entry_points:
