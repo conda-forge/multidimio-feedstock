@@ -1,5 +1,5 @@
 {% set name = "multidimio" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
-  sha256: a3b5b1d5bf8fa7d586ca82b197ac3eb8dc93841c3ae1bb7aecf3da971f36e74b
+  sha256: f82be974cae5150cd85c653da18536a9d3138fd081201f8318d7c9f00b30f6c1
 
 build:
   entry_points:
@@ -32,7 +32,7 @@ requirements:
     - rich >=13.9.4,<14.0.0
     - segy >=0.4.0,<0.5.0
     - tqdm >=4.67.0,<5.0.0
-    - zarr >=3.0.8,<4.0.0
+    - zarr >=3.1.0,<4.0.0
 
   run_constrained:
     - distributed >=2024.12.0
