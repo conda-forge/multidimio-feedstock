@@ -1,5 +1,5 @@
 {% set name = "multidimio" %}
-{% set version = "0.9.3" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
-  sha256: f82be974cae5150cd85c653da18536a9d3138fd081201f8318d7c9f00b30f6c1
+  sha256: 90211f3ef9b23688022fadd3b2720d599f19dc4ec4725cbee718c28ffc598c97
 
 build:
   entry_points:
@@ -24,22 +24,26 @@ requirements:
 
   run:
     - python >={{ python_min }},<3.14
-    - click >=8.1.7,<9.0.0
+    - click >=8.2.1,<9.0.0
     - click-params >=0.5.0,<0.6.0
-    - dask-core >=2024.12.0
-    - fsspec >=2024.10.0
-    - psutil >=6.1.0,<7.0.0
-    - rich >=13.9.4,<14.0.0
-    - segy >=0.4.0,<0.5.0
-    - tqdm >=4.67.0,<5.0.0
-    - zarr >=3.1.0,<4.0.0
+    - dask-core >=2025.7.0
+    - fsspec >=2025.9.0
+    - pint >=0.25.0,<1.0.0
+    - psutil >=7.0.0,<8.0.0
+    - pydantic >=2.11.7,<3.0.0
+    - rich >=14.1.0,<15.0.0
+    - segy >=0.4.2,<0.5.0
+    - tqdm >=4.67.1,<5.0.0
+    - universal-pathlib >=0.2.6
+    - xarray >=2025.9.0
+    - zarr >=3.1.2,<4.0.0
 
   run_constrained:
-    - distributed >=2024.12.0
-    - bokeh >=3.4.2,<4.0.0
-    - s3fs >=2024.10.0
-    - gcsfs >=2024.10.0
-    - adlfs >=2024.7.0
+    - distributed >=2025.7.0
+    - bokeh >=3.8.0,<4.0.0
+    - s3fs >=2025.9.0
+    - gcsfs >=2025.9.0
+    - adlfs >=2025.8.0
     - zfpy >=1.0.1,<2.0.0
 
 test:
