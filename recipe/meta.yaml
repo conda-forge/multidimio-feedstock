@@ -29,14 +29,14 @@ requirements:
     - dask-core >=2025.7.0
     - fsspec >=2025.9.0
     - pint >=0.25.0,<1.0.0
-    - psutil >=6.1.0,<7.0.0
+    - psutil >=7.0.0,<8.0.0
     - pydantic >=2.11.7,<3.0.0
     - rich >=14.1.0,<15.0.0
     - segy >=0.4.2,<0.5.0
     - tqdm >=4.67.1,<5.0.0
     - universal-pathlib >=0.2.6
     - xarray >=2025.9.0
-    - zarr >=3.1.0,<4.0.0
+    - zarr >=3.1.2,<4.0.0
 
   run_constrained:
     - distributed >=2025.9.0
