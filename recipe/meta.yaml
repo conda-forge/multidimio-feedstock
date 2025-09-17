@@ -39,11 +39,11 @@ requirements:
 
   run_constrained:
     - distributed >=2025.9.0
-    - bokeh >=3.8.0,<4.0.0
+    - bokeh >=3.8.0
     - s3fs >=2025.9.0
     - gcsfs >=2025.9.0
     - adlfs >=2025.8.0
-    - zfpy >=1.0.1,<2.0.0
+    - zfpy >=1.0.1
 
 test:
   imports:
