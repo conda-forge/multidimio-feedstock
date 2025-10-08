@@ -31,7 +31,7 @@ requirements:
     - psutil >=7.0.0
     - pydantic >=2.11.9
     - rich >=14.1.0
-    - segy >=0.5.1
+    - segy >=0.5.1,<0.5.2
     - tqdm >=4.67.1
     - universal-pathlib >=0.2.6
     - xarray >=2025.9.1
