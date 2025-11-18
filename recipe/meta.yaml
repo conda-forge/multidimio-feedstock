@@ -1,5 +1,5 @@
 {% set name = "multidimio" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
-  sha256: b7ba518c27d69d394db960ab0a6102967a7c27fedf722d9e2fa03ffad0244434
+  sha256: 951b5a58115dc4896ea55cc0aa6266fbf44a9d6b4319dcce0b625ba611da4782
 
 build:
   entry_points:
