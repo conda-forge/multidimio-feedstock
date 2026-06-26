@@ -1,5 +1,5 @@
 {% set name = "multidimio" %}
-{% set version = "1.1.3" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multidimio-{{ version }}.tar.gz
-  sha256: f37dfebf3b71f07542db8ecb2f55f648465815056bd2a3198c9d627ae3222ba4
+  sha256: 80c824c5cff30e292246886e7e4357b0e37c2745786830ea140da820960118e0
 
 build:
   entry_points:
@@ -32,11 +32,11 @@ requirements:
     - pydantic >=2.12.0
     - pydantic-settings >=2.6.1
     - rich >=14.1.0
-    - segy >=0.5.4
+    - segy >=0.6.0
     - tqdm >=4.67.1
     - universal-pathlib >=0.3.3
     - xarray >=2025.10.1
-    - zarr >=3.1.3
+    - zarr >=3.2.1
 
   run_constrained:
     - distributed >=2025.9.1
